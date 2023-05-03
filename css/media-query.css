@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Telas Grandes: acima de 1200px*/
+
+
+@media screen and (min-width: 992px){
+    
+    body{
+        background: transparent url('./../images/pattern-background-desktop.svg') center center / cover no-repeat;
+    }
+    article#pedido{
+
+        height: 640px;
+        width: 450px;
+        background-color: hsl(225, 100%, 98%);
+    }
+
+    article#pedido > div#info > h1{
+
+        margin-top: 15px;
+        font-size: 1.9em;
+    }
+
+    article#pedido > div#info > p{
+
+        font-size: 17.5px;
+    }
+
+    article#pedido > div#info > div#plano{
+
+        width: 390px; 
+    }
+
+    article#pedido > div#info > div#plano > img{
+
+        top:71%
+    }
+
+    article#pedido > div#info > div#plano > p{
+
+        margin-left: 0px;
+        margin-right: 115px;
+    }
+
+
+    article#pedido > div#info > div#plano > a{
+
+        top:70%
+    }
+
+    article#pedido > div#info > input[type=submit] {
+
+        width: 390px;
+    }
+
+    article#pedido > div#info > input[type=reset]{
+
+        margin-left: 175px;
+    }
+}
