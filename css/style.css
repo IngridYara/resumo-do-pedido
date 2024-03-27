@@ -15,25 +15,21 @@ html, body {
 
 body{
     background: transparent url('./../images/pattern-background-mobile.svg') center center / cover no-repeat;
-}
 
-main{
-    position: relative;
-    height: 700px;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 25px;
 }
 
 article#pedido{
 
-    background-color:hsl(225, 100%, 98%);
+    background-color:#fff;
     border-radius: 20px;
     width: 375px;
     height: 620px;
-
+    margin-bottom: 50px;
     box-shadow: 5px 25px 20px rgba(0, 0, 0, 0.123);
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
     transition: width 0.4s height 0.4s;
     transition-timing-function: ease;
 }
@@ -70,27 +66,22 @@ article#pedido > div#info > div#plano{
     width: 320px;
     padding: 20px 0px 15px 0px;
     border-radius: 10px;
-    font-family: 'Red Hat Display', san-serif;
-    
+    font-family: 'Red Hat Display', san-serif;  
 }
 
 article#pedido > div#info > div#plano > img{
 
-    position: absolute;
-    top:69%;
-    left:18%;
-    transform: translate(-50%, -50%);
- 
+    margin-left: 10px;
 }
 
 article#pedido > div#info > div#plano > p {
   
     text-align: center;
     color:  hsl(224, 23%, 55%);
-    margin-right: 95px;
-    margin-left: 25px;
+    padding: 5px;
     line-height: 23px;
-    
+    display: inline-block;
+
 }
 article#pedido > div#info > div#plano > p > span{
 
@@ -102,12 +93,10 @@ article#pedido > div#info > div#plano > a{
 
     color: hsl(245, 75%, 52%);
     font-weight: bolder;
+    display: inline;
+    position: relative;
+    bottom:13px;
 
-    position: absolute;
-    top: 69%;
-    left: 80%;
-
-    transform: translate(-50%, -50%);
 }
 
 article#pedido > div#info > div#plano > a:hover{
